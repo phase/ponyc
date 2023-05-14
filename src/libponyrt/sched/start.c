@@ -102,7 +102,7 @@ static opt_arg_t args[] =
 #ifdef __cplusplus
 extern "C" {
 #endif
-void Main_runtime_override_defaults_oo(options_t* opt);
+//void Main_runtime_override_defaults_oo(options_t* opt);
 #ifdef __cplusplus
 }
 #endif
@@ -246,7 +246,7 @@ PONY_API int pony_init(int argc, char** argv)
   pony_register_thread();
 
   // Allow override via bare function on Main actor
-  Main_runtime_override_defaults_oo(&opt);
+  //Main_runtime_override_defaults_oo(&opt);
 
   argc = parse_opts(argc, argv, &opt);
 
